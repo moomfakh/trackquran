@@ -25,12 +25,12 @@ const d = new Date();
  var min = 1;
   var hour = d.getHours();
   
+  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ;
   setInterval(  tim , 1000)
    } 
       function tim(){
         
-
-  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ;  
+  
     if (nmin >=  min) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
