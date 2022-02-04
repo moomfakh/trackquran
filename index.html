@@ -18,13 +18,14 @@
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
+
 const d = new Date();
 
  var min =d.getMinutes();
   var hour = d.getHours()
   function cal() {
-    var wh= nhour - hour ;
-  var f = new Date() ; var nimn = f.getMinutes() ; var nhour = f.getHours() ; 
+    
+  var f = new Date() ; var nimn = f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; 
     if (nmin>min) {
     dism.innerHTML = nmin - min;
       dish.innerHTML = wh;
