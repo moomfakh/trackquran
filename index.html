@@ -22,7 +22,7 @@
   
 const d = new Date();
 
- var min =d.getMinutes();
+ var min = 1;
   var hour = d.getHours();
   
   setInterval(  tim , 1000)
@@ -30,7 +30,7 @@ const d = new Date();
       function tim(){
         
 
-  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ;  alert(nmin)
+  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ;  
     if (nmin >=  min) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
