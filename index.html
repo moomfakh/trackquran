@@ -25,7 +25,7 @@ const d = new Date();
   var hour = d.getHours()
   function cal() {
     
-  var f = new Date() ; var nimn = f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; 
+  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; 
     if (nmin>min) {
     dism.innerHTML = nmin - min;
       dish.innerHTML = wh;
@@ -39,6 +39,7 @@ const d = new Date();
           dism.innerHTML = 60 - wm ;
           }
       }
+    }
  </script>
   </body>
 
