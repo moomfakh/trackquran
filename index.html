@@ -14,11 +14,15 @@
 
   <body>
    <p id="demo" ></p>
+    <button onclick="cal()">Calculate</button>
 <script>
  
 const d = new Date();
 
- d.setMinutes(d.getMinutes()) ; var ij =d.getMinutes();var f = new Date() ; var o = f.getMinutes() ;document.getElementById("demo").innerHTML = o - ij ;
+ var ij =d.getMinutes();
+  function cal() {
+  var f = new Date() ; var o = f.getMinutes() ;document.getElementById("demo").innerHTML = o - ij ;
+    }
  </script>
   </body>
 
