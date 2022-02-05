@@ -21,16 +21,14 @@
   function cal() {
   
 const d = new Date();
-var nmin ;
- var min =
-  var hour = d.getHours();
-   var nhour = d.getHours() ; var wh= nhour - hour ; var wh , nhour , nmin , f ;
-  setInterval(  tim , 3000  , hour, min)
+    var min =  d.getMinutes();
+  var hour = d.getHours();var wh , nhour , nmin , f ;
+  setInterval(  tim , 1000  , hour, min)
    } 
       function tim(h, m){
         f = new Date()
    nmin =   f.getMinutes();   
-        alert(nmin)
+        alert(nmin) ;
     if (nmin >= min) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
