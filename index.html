@@ -24,16 +24,16 @@ const d = new Date();
 
  var min = d.getMinutes();
   var hour = d.getHours();
-  
-  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; alert()
-  setInterval(  tim , 10000)
+  var rmin = min ; 
+  var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; alert(rmin)
+  setInterval(  tim , 3000)
    } 
       function tim(){
         
 
   f = new Date() ;  nmin= f.getMinutes() ; 
-nhour = f.getHours() ;  wh= nhour - hour ;
-  alert(min)
+nhour = f.getHours() ;  wh= nhour - hour ; 
+  alert(rmin)
     if (nmin >= min) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
