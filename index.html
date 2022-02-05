@@ -22,7 +22,7 @@
   
 const d = new Date();
     var min =  d.getMinutes();
-  var hour = d.getHours();var wh , nhour , nmin , f ;
+  var hour = d.getHours();var wh , nhour , nmin , f , wm;
   setInterval(  tim , 1000  , hour, min)
    } 
       function tim(h, m){
@@ -32,13 +32,13 @@ const d = new Date();
       nhour = f.getHours() ;wh= nhour - h ; 
    
     if (nmin >= m) {
-      alert(nmin) ;
+     
     dism.innerHTML = nmin - m;
       dish.innerHTML = wh
      
     } else {
-      alert ("h")
- var wm = nmin - min ;
+     
+ wm = nmin - m ;
       if (wh < 2) {
         dism.innerHTML = 60+ wm ;
         } else {
