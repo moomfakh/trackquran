@@ -22,13 +22,15 @@
   
 const d = new Date();
 var nmin ;
- var min = d.getMinutes();
+ var min =
   var hour = d.getHours();
-   var nhour = d.getHours() ; var wh= nhour - hour ; 
-  setInterval(  tim , 3000  , d.getMinutes() , min)
+   var nhour = d.getHours() ; var wh= nhour - hour ; var wh , nhour , nmin , f ;
+  setInterval(  tim , 3000  , hour, min)
    } 
-      function tim(n , m){
-        alert(n)
+      function tim(h, m){
+        f = new Date()
+   nmin =   f.getMinutes();   
+        alert(nmin)
     if (nmin >= min) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
