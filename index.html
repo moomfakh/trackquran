@@ -15,6 +15,7 @@
   <body>
    <p id="time" ><span id ="hour" ></span>h<span id="min"></span></p>
     <button onclick="cal()">Start</button>
+    <button onclick="scal()">Stop</button>
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
@@ -23,7 +24,7 @@
 const d = new Date();
     var min =  d.getMinutes();
   var hour = d.getHours();var wh , nhour , nmin , f , wm;
-  setInterval(  tim , 1000  , hour, min)
+ var tim =  setInterval(  tim , 60000  , hour, min)
    } 
       function tim(h, m){
         f = new Date()
@@ -46,7 +47,11 @@ const d = new Date();
           dism.innerHTML = 60 + wm ;
           }
       }} 
-    
+    function scal() {
+      clearTimeout(tim) ;
+      var o = new Date() ;
+      
+      }
  </script>
   </body>
 
