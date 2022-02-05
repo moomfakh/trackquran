@@ -28,10 +28,12 @@ const d = new Date();
       function tim(h, m){
         f = new Date()
    nmin =   f.getMinutes();   
-        alert(m) ;
+        
+      nhour = f.getHours() ;wh= nhour - h ; 
+        alert(m)
     if (nmin >= m) {
       alert(nmin) ;
-    dism.innerHTML = nmin - min;
+    dism.innerHTML = nmin - m;
       dish.innerHTML = wh
      
     } else {
