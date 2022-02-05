@@ -26,15 +26,15 @@ const d = new Date();
   var hour = d.getHours();
   var rmin = min ; 
   var f = new Date() ; var nmin= f.getMinutes() ; var nhour = f.getHours() ; var wh= nhour - hour ; alert(rmin)
-  setInterval(  tim , 300)
+  setInterval(  tim , 3000)
    } 
       function tim(){
         
 
   f = new Date() ;  nmin= f.getMinutes() ; 
 nhour = f.getHours() ;  wh= nhour - hour ; 
-  alert(rmin)
-    if (nmin >= min) {
+  alert(min)
+    if (nmin >= rmin) {
       alert(nmin) ;
     dism.innerHTML = nmin - min;
       dish.innerHTML = wh
