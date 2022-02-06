@@ -54,7 +54,7 @@
  var ye = o.getFullYear().toString().slice(2,5) ;
  var mo = o.getMonth().toString() ;
       var da = o.getDate().toString() ;
- var code = ye + mo + da ;   localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML) * 60) ; alert (localStorage.getItem("2216") 
+ var code = ye + mo + da ;   localStorage.setItem(code.toString(), (Number(dism.innerHTML) + Number(dish.innerHTML) * 60).toString()) ; alert (localStorage.getItem("2216") )
 
       
 
