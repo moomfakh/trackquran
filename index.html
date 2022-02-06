@@ -19,14 +19,15 @@
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
+ var wh , nhour , nmin , f , wm , hour , min , rimin , d , o , code ;
   function cal() {
   
 const d = new Date();
     var min =  d.getMinutes();
-  var hour = d.getHours();var wh , nhour , nmin , f , wm;
- var timin =  setInterval(  tim , 60000  , hour, min)
+  var hour = d.getHours();;
+ var timin =  setInterval(  tim , 60000  )
    } 
-      function tim(h, m){
+      function tim(){
         f = new Date()
    nmin =   f.getMinutes();   
         
