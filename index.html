@@ -22,10 +22,10 @@
  var wh , nhour , nmin , f , wm , hour , min , rimin , d , o , code ;
   function cal() {
   
-const d = new Date();
-    var min =  d.getMinutes();
-  var hour = d.getHours();;
- var timin =  setInterval(  tim , 60000  )
+ d = new Date();
+    min =  d.getMinutes();
+  hour = d.getHours();;
+ timin =  setInterval(  tim , 60000  )
    } 
       function tim(){
         f = new Date()
@@ -50,7 +50,7 @@ const d = new Date();
       }} 
     function scal() {
       clearInterval(timin) ;
-      var o = new Date() ;
+      o = new Date() ;
  var ye = o.getFullYear().toString().slice(2,5) ;
  var mo = o.getMonth().toString() ;
       var da = o.getDate().toString() ;
