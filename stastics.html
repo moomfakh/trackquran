@@ -30,13 +30,13 @@ google.charts.setOnLoadCallback(drawChart);
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const d = new Date();
-
+var hook = d.getDay()
 
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
-  [days[d.getDay()],55],
-  ['France',49],
+  [days[hook],55],
+  [days[hook - 1],49],
   ['Spain',44],
   ['USA',24],
   ['Argentina',15]
