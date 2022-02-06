@@ -27,11 +27,15 @@
     <script type="text/javascript">
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const d = new Date();
+
 
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
-  ['Italy',55],
+  [days[d.getDay()- 6],55],
   ['France',49],
   ['Spain',44],
   ['USA',24],
