@@ -25,7 +25,7 @@
  d = new Date();
     m =  d.getMinutes();
   h = d.getHours();;
- timin =  setInterval(  tim , 6000  )
+ timin =  setInterval(  tim , 60000 )
    } 
       function tim(){
         f = new Date()
@@ -36,7 +36,7 @@
     if (nmin >= m) {
      
     dism.innerHTML = nmin - m;
-      dish.innerHTML = wh
+      dish.innerHTML = wh ;
      
     } else {
      
@@ -54,7 +54,7 @@
  var ye = o.getFullYear().toString().slice(2,5) ;
  var mo = o.getMonth().toString() ;
       var da = o.getDate().toString() ;
- var code = ye + mo + da ; alert(code)
+ var code = ye + mo + da ;alert Number(dism.innerHTML) + Number(dish.innerHTML * 60))    localStorage.setIten(code.toString , Number(dism.innerHTML) + Number(dish.innerHTML * 60)) 
       }
  </script>
   </body>
