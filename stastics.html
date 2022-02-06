@@ -29,14 +29,14 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-const d = new Date();
-var hook = d.getDay()
-
+const z = new Date();
+var h = z.getDay()
+let a = h - 6 ;  
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
-  [days[hook],55],
-  [days[hook - 1],49],
+  [days[h],55],
+  [days[a],49],
   ['Spain',44],
   ['USA',24],
   ['Argentina',15]
