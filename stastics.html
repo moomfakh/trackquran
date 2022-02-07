@@ -34,7 +34,8 @@ var h = z.getDay() ; var i ;
       dam[0] = h ; 
 for(i=1 ; i<7 ; i++) {
   if ((h - 1) < 0 ) {
-    alert(h)
+    h = 7 ;
+    dam[i] = h ;
     } else {
       h--
       dam[i] = h;
@@ -45,7 +46,7 @@ function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
   [days[dam[0]],55],
-  [days[dam[1]],49],
+  [days[dam[6]],49],
   ['Spain',44],
   ['USA',24],
   ['Argentina',15]
