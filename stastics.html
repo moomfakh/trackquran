@@ -30,8 +30,12 @@ google.charts.setOnLoadCallback(drawChart);
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const z = new Date();
-var h = z.getDay()
-let a = h +7 ;  
+var h = z.getDay() ; var i ;
+for(i=1 ; i<7 ; i++) {
+  if (h-- < 0 ) {
+    alert(4) ;
+    }
+    }
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
