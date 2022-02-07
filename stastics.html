@@ -32,7 +32,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const z = new Date();
 var h = z.getDay() ; var i ;
 for(i=1 ; i<7 ; i++) {
-  if (h-- < 0 ) {
+  if ((h - 1) < 0 ) {
     alert(h) ;
     } else {
       alert(h)
