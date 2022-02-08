@@ -64,14 +64,14 @@ function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
   [days[dam[6]],Number(localStorage.getItem(gam[0])) ],
-  [days[dam[5]],49],
-  [days[dam[4]],44],
-  [days[dam[3]],24],
-  [days[dam[2]],15],
+  [days[dam[5]],Number(localStorage.getItem(gam[1]))],
+  [days[dam[4]],Number(localStorage.getItem(gam[2]))],
+  [days[dam[3]],Number(localStorage.getItem(gam[0]))],
+  [days[dam[2]],Number(localStorage.getItem(gam[0]))],
 
-  [days[dam[1]],15],
+  [days[dam[1]],Number(localStorage.getItem(gam[0]))],
 
-  [days[dam[0]],15],
+  [days[dam[0]],Number(localStorage.getItem(gam[0]))],
  
 ]);
 
