@@ -60,7 +60,8 @@
       if (localStorage.getItem(code) === null) {
       localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML)*60);  )
 } else {
-localStorage.setItem(code.toString() , Number(localStorage.getItem(code)) + Number(dism.innerHTML) + Number(dish.innerHTML)*60); alert(localStorage.getItem(code))
+  var ol =  Number(localStorage.getItem(code))  ;
+localStorage.setItem(code.toString() ,ol + Number(dism.innerHTML) + Number(dish.innerHTML)*60); alert(localStorage.getItem(code))
   }
       
 
