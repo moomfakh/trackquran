@@ -13,18 +13,18 @@
   </head>
 
   <body>
-   <p id="time" ><span id ="hour" >0</span> H<span id="min">0</span> M</p>
-    <button onclick="cal()">Start</button>
+   <h1> id="time" ><span id ="hour" >0</span> H <span id="min">0</span> M</h1>
+    <button onclick="cal(this)">Start</button>
     <button onclick="scal()">Stop</button>
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
  var wh , nhour , nmin , f , wm , h , m , timin , d , o , code ;
-  function cal() {
+  function cal(elem) {
   
  d = new Date();
     m =  d.getMinutes();
-  h = d.getHours();;
+  h = d.getHours(); this.disabled= true ;
  timin =  setInterval(  tim , 6000 )
    } 
       function tim(){
