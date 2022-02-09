@@ -7,7 +7,9 @@
   <head>
 
     <style>
-
+#stop { 
+  display: none 
+    }
     </style>
 
   </head>
@@ -15,7 +17,7 @@
   <body>
    <h1> id="time" ><span id ="hour" >0</span> H <span id="min">0</span> M</h1>
     <button onclick="cal(this)">Start</button>
-    <button onclick="scal()">Stop</button>
+    <button onclick="scal()" id="stop">Stop</button>
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
@@ -24,7 +26,7 @@
   
  d = new Date();
     m =  d.getMinutes();
-  h = d.getHours(); this.disabled= true ;
+  h = d.getHours(); this.style.display= "none" ; document.getElementById("stop").display="block" ;
  timin =  setInterval(  tim , 6000 )
    } 
       function tim(){
