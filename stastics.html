@@ -44,7 +44,7 @@ function tig(num) {
  code = ye + mo + da ;
   gam[num] = code ;
   }
-      dam[0] = h ; tig(0) ; alert(gam[0]) ;
+      dam[0] = h ; tig(0) ; ;
 for(i=1 ; i<7 ; i++) {
   if ((h - 1) < 0 ) {
     h = 6 ;
@@ -63,13 +63,13 @@ o.setDate(o.getDate() - 1); tig(i) ;
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
   ['Contry', 'Mhl'],
-  [days[dam[6]],Number(localStorage.getItem(gam[0])) ],
-  [days[dam[5]],Number(localStorage.getItem(gam[1]))],
-  [days[dam[4]],Number(localStorage.getItem(gam[2]))],
+  [days[dam[6]],Number(localStorage.getItem(gam[6])) ],
+  [days[dam[5]],Number(localStorage.getItem(gam[5]))],
+  [days[dam[4]],Number(localStorage.getItem(gam[4]))],
   [days[dam[3]],Number(localStorage.getItem(gam[3]))],
-  [days[dam[2]],Number(localStorage.getItem(gam[0]))],
+  [days[dam[2]],Number(localStorage.getItem(gam[2]))],
 
-  [days[dam[1]],Number(localStorage.getItem(gam[0]))],
+  [days[dam[1]],Number(localStorage.getItem(gam[1]))],
 
   [days[dam[0]],Number(localStorage.getItem(gam[0]))],
  
