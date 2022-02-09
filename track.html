@@ -56,7 +56,7 @@
  var ye = o.getFullYear().toString().slice(2,5) ;
  var mo = o.getMonth().toString() ;
       var da = o.getDate().toString() ;
- var code = ye + mo + da ;  
+ code = ye + mo + da ;  
       if (localStorage.getItem(code.toString()) === null) {
       localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML)*60);  )
 } else {
