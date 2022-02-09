@@ -58,7 +58,7 @@
       var da = o.getDate().toString() ;
  code = ye + mo + da ;  
       if (localStorage.getItem(code.toString()) === null) {
-      localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML)*60);  )
+      localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML)*60)
 } else {
   var ol =  Number(localStorage.getItem(code.toString()))  ;
 localStorage.setItem(code.toString() ,ol + Number(dism.innerHTML) + Number(dish.innerHTML)*60); alert(localStorage.getItem(code.toString()))
