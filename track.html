@@ -16,7 +16,7 @@
   width:80% ;
   border-radius: 12px ;
     text-align: center ;
-  
+  display: none ;
   }
       .button {
         
@@ -48,7 +48,8 @@
         
         }
       #stop { 
-
+background: red ;
+        color: white ;
   display: none 
 
     }
@@ -68,7 +69,7 @@
   
  d = new Date();
     m =  d.getMinutes();
-  h = d.getHours(); elem.style.display= "none" ; document.getElementById("stop").style.display="block" ;
+  h = d.getHours(); elem.style.display= "none" ; document.getElementById("stop").style.display="block" ; document.getElementById("time").style.display="block"
  timin =  setInterval(  tim , 6000 )
    } 
       function tim(){
