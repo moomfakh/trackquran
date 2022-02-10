@@ -7,8 +7,38 @@
   <head>
 
     <style>
-#stop { 
+
+      .button {
+        
+
+  background-color: #04AA6D; /* Green */
+
+  border: none;
+
+  color: white;
+
+  padding: 20px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  margin: 4px 2px;
+
+  cursor: pointer;
+        border-radius : 12px ;
+        display: block ;
+        width: 70% ;
+        margin: 0 auto ;
+        }
+      #stop { 
+
   display: none 
+
     }
     </style>
 
@@ -16,8 +46,8 @@
 
   <body>
    <h1 id="time" ><span id ="hour" >0</span> H <span id="min">0</span> M</h1>
-    <button onclick="cal(this)">Start</button>
-    <button onclick="scal()" id="stop">Stop</button>
+    <button onclick="cal(this)" class="button">Start</button>
+    <button onclick="scal()" id="stop" class="button">Stop</button>
 <script>
  var dism = document.getElementById("min") ;
  var dish = document.getElementById("hour") ;
