@@ -41,8 +41,17 @@ button:active {
   transform: translateY(4px);
 
 }
+.butcon {
+    display: grid;
 
+  gap: 5px 10px;
 
+  grid-template-columns: auto auto;
+
+  background-color: #2196F3;
+
+  padding: 10px;
+}
     </style>
 
   </head>
@@ -50,7 +59,7 @@ button:active {
   <body>
 
 <p>Lulu</p>
-
+<div class="butcon">
     <button> gum</button>
 
     <button onclick="check(this)"> dumdum</button>
@@ -58,7 +67,7 @@ button:active {
     <button class="correct" onclick="check(this)"> jhuum</button>
 
     <button> timtom</button>
-
+</div>
     <script>
 
       function check(elem) {
