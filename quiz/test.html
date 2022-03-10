@@ -68,7 +68,8 @@ button:active {
     <button> timtom</button>
 </div>
     <script>
-
+var correct = document.querySelectorAll(".correct");
+      var num = 0 ;
       function check(elem) {
 
         if (elem.className === "correct" ) {
@@ -78,7 +79,7 @@ button:active {
           } else {
 
           elem.style.background = "red" ;
-
+correct[num].border ="3px solid green"
             }
 
         }
