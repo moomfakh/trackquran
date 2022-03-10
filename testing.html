@@ -13,24 +13,30 @@
   </head>
 
   <body>
-<div id ="mh">some cheap stuff</div>
-    <button onclick ="shareCanvas()">clck me</button>
-    <script>
-      async function shareCanvas() {
-const canvas = await html2canvas(shareTarget.current);
 
+<div id ="mh">some cheap stuff</div>
+
+    <button onclick ="shareCanvas()">clck me</button>
+
+    <script>
+
+      function shareCanvas() {
+
+const canvas = html2canvas(shareTarget.current);
 
   const canvasElement = document.getElementById("mh");
 
   const dataUrl = canvasElement.toDataURL();
 
-  const blob = await (await fetch(dataUrl)).blob();
+  const blob = (fetch(dataUrl)).blob();
 
   const filesArray = [
 
     new File(
 
       [blob],
+
+ 
 
       'animation.png',
 
@@ -54,8 +60,10 @@ const canvas = await html2canvas(shareTarget.current);
 
   navigator.share(shareData);
 
-}
+} 
+
+</script>
+
   </body>
 
  </html>
-
