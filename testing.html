@@ -4,7 +4,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
-<script src="canvas.js"></script>
 
     <style>
 
@@ -14,7 +13,7 @@
 
   <body>
 
-<div id ="mh">some cheap stuff</div>
+<canvas id ="mh">some cheap stuff</canvas>
 
     <button onclick ="shareCanvas()">clck me</button>
 
@@ -22,7 +21,6 @@
 
       function shareCanvas() {
 
-const canvas = html2canvas(shareTarget.current);
 
   const canvasElement = document.getElementById("mh");
 
