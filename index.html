@@ -142,7 +142,27 @@ background-image: linear-gradient(to right , #ffcccc , #ccffcc , #ccccff , #ffcc
   <h2>Supplications</h2> <br> Supplications from Quran and Hadiths</div>
                  
     
+<script>
+  if ('serviceWorker' in navigator) {
 
+  navigator.serviceWorker.register('sw.js')
+
+  .then((reg) => {
+
+    // registration worked
+
+    console.log('Registration succeeded. Scope is ' + reg.scope);
+
+  }).catch((error) => {
+
+    // registration failed
+
+    console.log('Registration failed with ' + error);
+
+  });
+
+}
+  </script>
   </body>
 
  </html>
