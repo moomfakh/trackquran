@@ -145,7 +145,7 @@ background-image: linear-gradient(to right , #ffcccc , #ccffcc , #ccccff , #ffcc
 <script>
   if ('serviceWorker' in navigator ) {
 
-  navigator.serviceWorker.register('sws.js' , {scope:"/supplication/"})
+  navigator.serviceWorker.register('sw.js' )
 
   .then((reg) => {
 
@@ -160,23 +160,6 @@ background-image: linear-gradient(to right , #ffcccc , #ccffcc , #ccccff , #ffcc
     alert('Registration failed with ' + error);
 
   });
-  navigator.serviceWorker.register('sw.js' , {scope:"https://trackquran.netlify.app/index.html"})
-
-  .then((reg) => {
-
-    // registration worked
-
-    alert('Registration succeeded. Scope is ' + reg.scope);
-
-  }).catch((error) => {
-
-    // registration failed
-
-    alert('Registration failed with ' + error);
-
-  });
-
-
 
 }
   </script>
