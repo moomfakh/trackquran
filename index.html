@@ -160,6 +160,22 @@ background-image: linear-gradient(to right , #ffcccc , #ccffcc , #ccccff , #ffcc
     alert('Registration failed with ' + error);
 
   });
+  navigator.serviceWorker.register('sw.js' , {scope:"/index.html"})
+
+  .then((reg) => {
+
+    // registration worked
+
+    alert('Registration succeeded. Scope is ' + reg.scope);
+
+  }).catch((error) => {
+
+    // registration failed
+
+    alert('Registration failed with ' + error);
+
+  });
+
 
 
 }
