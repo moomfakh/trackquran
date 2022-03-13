@@ -143,9 +143,9 @@ background-image: linear-gradient(to right , #ffcccc , #ccffcc , #ccccff , #ffcc
                  
     
 <script>
-  if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator ) {
 
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.register('sw.js' , {scope:"/supplication/"})
 
   .then((reg) => {
 
