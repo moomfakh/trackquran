@@ -76,7 +76,7 @@ o.setDate(o.getDate() - 1); tig(i) ;
  
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
-  ['Contry', 'Mhl'],
+  ['Day', 'Minutes'],
   [days[dam[6]],Number(localStorage.getItem(gam[6])) ],
   [days[dam[5]],Number(localStorage.getItem(gam[5]))],
   [days[dam[4]],Number(localStorage.getItem(gam[4]))],
@@ -90,7 +90,7 @@ var data = google.visualization.arrayToDataTable([
 ]);
 
 var options = {
-  title:'World Wide Wine Production'
+  title:'Tilawat Stastics'
 };
 
 var chart = new google.visualization.ColumnChart(document.getElementById('myChart'));
