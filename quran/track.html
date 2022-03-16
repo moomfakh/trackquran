@@ -83,7 +83,8 @@ background: red ;
   
  d = new Date();
     m =  d.getMinutes();
-  h = d.getHours(); elem.style.display= "none" ; document.getElementById("stop").style.display="block" ; document.getElementById("time").style.display="block"
+  h = d.getHours(); elem.style.display= "none" ; document.getElementById("stop").style.display="block" ; 
+    document.getElementById("time").style.display="block"
  timin =  setInterval(  tim , 6000 )
    } 
       function tim(){
@@ -118,10 +119,9 @@ background: red ;
       localStorage.setItem(code.toString(), Number(dism.innerHTML) + Number(dish.innerHTML)*60)
 } else {
   var ol =  Number(localStorage.getItem(code.toString()))  ;
-localStorage.setItem(code.toString() ,ol + Number(dism.innerHTML) + Number(dish.innerHTML)*60); alert(localStorage.getItem(code.toString()))
-  }
-      
-
+localStorage.setItem(code.toString() ,ol + Number(dism.innerHTML) + Number(dish.innerHTML)*60); }
+     
+document.getElementById("stop").style.display = "none"
       }
  </script>
   </body>
