@@ -27,8 +27,26 @@
   "scope": "/",
 
   "theme_color": "#3367D6",
+"shortcuts": [
 
+    {
+
+      "name": "Supplications",
+
+      "short_name": "Supplications",
+
+      "description": "Read supplications directly",
+
+      "url": "/supplication?source=pwa",
+
+      "icons": [{ "src": "https://res.cloudinary.com/tajweed/image/upload/c_scale,h_192,w_192/v1647573174/IMG-20220318-WA0003_usnx5f.jpg", "sizes": "192x192" }]
+
+    }
+
+   
+
+  ],
   
 
-  "description": "Weather forecast information"
+  "description": "Read Supplications"
   }
