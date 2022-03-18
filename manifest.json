@@ -28,24 +28,7 @@
 
   "theme_color": "#3367D6",
 
-  "shortcuts": [
+  
 
-    {
-
-      "name": "Supplications",
-
-      "short_name": "Supplications",
-
-      "description": "Read supplications directly",
-
-      "url": "/supplication?source=pwa",
-
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
-
-    },
-
-   
-  ],
-
-  "description": "Weather forecast information",
+  "description": "Weather forecast information"
   }
