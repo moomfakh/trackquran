@@ -70,6 +70,7 @@ button:active {
     <script>
 var correct = document.querySelectorAll(".correct");
       var num = 0 ;
+      var numf ; var i;
       function check(elem) {
 
         if (elem.className === "correct" ) {
@@ -81,7 +82,10 @@ var correct = document.querySelectorAll(".correct");
           elem.style.background = "red" ;
 correct[num].style.background ="green"
             }
-
+for(i=0 ; i<4 ; i++) {
+  numf=  num*4 + i ; 
+  document.getElementsByTagName("button")[numf].disabled= "true"
+  }
         }
 
       </script>
