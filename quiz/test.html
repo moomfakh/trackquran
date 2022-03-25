@@ -63,17 +63,18 @@ button:active {
 
     <button onclick="check(this)"> dumdum</button>
 
-    <button class="correct" onclick="check(this)"> jhuum</button>
+    <button data-correct onclick="check(this)"> jhuum</button>
 
     <button> timtom</button>
 </div>
+    
     <script>
 var correct = document.querySelectorAll(".correct");
       var num = 0 ;
       var numf ; var i;
       function check(elem) {
 
-        if (elem.className === "correct" ) {
+        if (elem.dataset.dataCorrect == true ) {
 
           elem.style.background = "green" ;
 
