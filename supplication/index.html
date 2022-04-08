@@ -186,13 +186,25 @@ font-family: Comfortaa , sans-serif ;
   <body dir="rtl">
     <div dir="ltr" style="text-align: center ; margin:auto">
 <h1>Supplications</h1></div>
-      <dialog>This is an open dialog window</dialog>
+      <dialog><label for="points">Font Size</label>
+
+<input type="range" id="points" name="points" step="0.5" min="0" max="10" oninput ="change(this.value)">
+
+</dialog>
   <button onclick="settings()">Settings</button>        
-                               <script>
-                               function settings() {
-                               document.querySelectorAll("dialog")[0].showModal();
-                               }
-                               </script>
+ <script>
+function settings() {
+document.querySelectorAll("dialog")[0].showModal();
+
+   }
+ var dua =document.querySelectorAll(".dua") ; var i ;                                
+function change(val) {     
+for(i=0 ; dua < i ; i++ ) {
+  dua[i].style.fontSize = val + "vh" ;                                        
+  }                                        
+}                                  
+
+</script>
     <div class="dua" >
 اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۱﴾ الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۲﴾ 
       مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۳﴾ اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۴﴾ اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۵﴾ صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ  ۙ ۬ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾  
