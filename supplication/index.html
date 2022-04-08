@@ -188,7 +188,7 @@ font-family: Comfortaa , sans-serif ;
 <h1>Supplications</h1></div>
       <dialog><label for="points">Font Size</label>
 
-<input type="range" id="points" name="points" step="0.5" min="0" max="10" oninput ="change(this.value)">
+<input type="range" id="points" name="points" step="0.5" min="0" max="10" oninput ="chane(this.value)">
 
 </dialog>
   <button onclick="settings()">Settings</button>        
@@ -198,7 +198,7 @@ document.querySelectorAll("dialog")[0].showModal();
 
    }
  var dua =document.querySelectorAll(".dua") ; var i ;                                
-function change(val) {     
+function chane(val) {     
 for(let i=0 ; dua.length > i ; i++ ) {
   dua[i].style.fontSize = val + "vh" ;                                        
   }                                        
