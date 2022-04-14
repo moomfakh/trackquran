@@ -721,14 +721,14 @@ document.querySelectorAll("dialog")[0].showModal();
 
  var dua =document.querySelectorAll(".dua") ; var i ;                                
 
-function chane(val) {  alert(dua.length) ;
+function chane(val) {
 
 for( i=0 ; dua.length > i ; i++ ) {
 
   dua[i].style.fontSize = val + "vh" ;                                        
 
   }                                        
-                               
+localStorage.setItem("size" , val + "vh" ) ;
 
 }                                  
 
