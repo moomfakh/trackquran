@@ -185,7 +185,7 @@ font-family: Comfortaa , sans-serif ;
 <script>
 var r =document.querySelector(":root") ;                                                                                                                    var va = localStorage.getItem("size") ;  
    if( va != null) {
-  r.style.setProperty('--size', va);                               
+  r.style.setProperty('--size', va + "vh");                               
      }                            
      </script>                                                                                                                 
   </head>
@@ -728,8 +728,7 @@ for( i=0 ; dua.length > i ; i++ ) {
   dua[i].style.fontSize = val + "vh" ;                                        
 
   }                                        
-localStorage.setItem("size" , val + "vh" ) ;
-alert(val + "vh" )
+localStorage.setItem("size" , val ) ;
 }                                  
 
 </script>
