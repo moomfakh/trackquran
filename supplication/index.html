@@ -193,9 +193,12 @@ var r =document.querySelector(":root") ;                                        
   <body dir="rtl">
     <div dir="ltr" style="text-align: center ; margin:auto">
 <h1>Supplications</h1>
-      <dialog><label for="points">Arabic Font Size</label>
+      <dialog><label for="ar">Arabic Font Size</label>
 
-<input type="range" id="points" name="points" step="0.5" min="1.5" max="5.5" onchange ="chane(this.value)">
+<input type="range" id="ar" name="points" step="0.5" min="1.5" max="5.5" onchange ="chane(this.value)">
+  <label for="tr">Translation Font Size</label>
+
+<input type="range" id="tr" name="points" step="0.5" min="1.5" max="5.5" onchange ="chanet(this.value)">                                                                                                    
 <button onclick='document.querySelector("dialog").close()'>Close</button>
 </dialog>
   <button onclick="settings()">Settings</button>    </div>    
@@ -719,7 +722,7 @@ document.querySelectorAll("dialog")[0].showModal();
    }
 
  var dua =document.querySelectorAll(".dua") ; var i ;                                
-
+var trans = document.querySelectorAll(".trans") ;
 function chane(val) {
 
 for( i=0 ; dua.length > i ; i++ ) {
@@ -728,7 +731,21 @@ for( i=0 ; dua.length > i ; i++ ) {
 
   }                                        
 localStorage.setItem("size" , val ) ;
-}                                  
+}   
+   function chanet(val) {
+
+for( i=0 ; trans.length > i ; i++ ) {
+
+  trans[i].style.fontSize = val + "vh" ;                                        
+
+  }                                        
+
+localStorage.setItem("trans" , val ) ;
+
+}                           
+   
+
+document.querySelectorAll("input")[1].value = localStorage.getItem("trans") ;                        
 document.querySelector("input").value = localStorage.getItem("size") ;
 </script>
 
