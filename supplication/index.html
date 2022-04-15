@@ -37,6 +37,7 @@
     <style>
 :root {
   --size: 3.5vh ;
+   --site: 1.5 vh                                                                                                                   
  }                                                                                                                     
 body {
 
@@ -65,7 +66,7 @@ background: white ;
 
 .trans {
   font-family : copperplate fantasy ;
-  font-size: 1.5vh
+  font-size: var(--site) ;
   }
       .context {
         font-family : verdana sans-serif;
@@ -183,10 +184,19 @@ font-family: Comfortaa , sans-serif ;
       }
     </style>
 <script>
-var r =document.querySelector(":root") ;                                                                                                                    var va = localStorage.getItem("size") ;  
+var r =document.querySelector(":root") ; 
+var va = localStorage.getItem("size") ;  
    if( va != null) {
   r.style.setProperty('--size', va + "vh");                               
-     }                            
+     }  
+
+var vat = localStorage.getItem("trans") ;  
+
+   if( va != null) {
+
+  r.style.setProperty('--site', vat + "vh");                               
+
+     }                                         
      </script>                                                                                                                 
   </head>
 
