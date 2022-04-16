@@ -182,7 +182,9 @@ font-family: Comfortaa , sans-serif ;
       background:#ffe6ec ;
 
       }
-  input { accent-color : #127ce6 }                                                                                                                     
+  input { accent-color : #127ce6 }       
+  .settings { position: absolute ; right: 10px ; top: 10px ; background: none ;
+  }                                                                                                                    
     </style>
 <script>
 var r =document.querySelector(":root") ; 
@@ -212,7 +214,7 @@ var vat = localStorage.getItem("trans") ;
 <input type="range" id="tr" name="points" step="0.5" min="1.5" max="3" onchange ="chanet(this.value)"> </div>                                                                                              
 <button onclick='document.querySelector("dialog").close()'>Close</button>
 </dialog>
-  <button onclick="settings()"><img src="
+  <button onclick="settings()" class="settings"><img src="
 https://res.cloudinary.com/tajweed/image/upload/c_scale,w_40/v1650082975/600px-Windows_Settings_app_icon_xcpl9g.png"
 alt="settings"></button>    </div>    
     <div class="dua" >
