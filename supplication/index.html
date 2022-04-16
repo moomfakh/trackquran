@@ -36,7 +36,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Comfortaa&display=swap" rel="stylesheet">
     <style>
-
+:root {
+  --size: 3.5vh ;
+   --site: 1.5 vh                                                                                                                   
+ }                                                                                                                     
 body {
 
 background :white;
@@ -55,7 +58,7 @@ width:90% ;
 
   font-family: 'Noto Naskh Arabic', serif;
 
-  font-size: 3.5vh ;
+  font-size: var(--size) ;
 
  margin: 15px auto; 
 background: white ;
@@ -64,7 +67,7 @@ background: white ;
 
 .trans {
   font-family : copperplate fantasy ;
-  font-size: 1.5vh
+  font-size: var(--site) ;
   }
       .context {
         font-family : verdana sans-serif;
@@ -73,7 +76,7 @@ background: white ;
         }
         h1 {
 font-family: Comfortaa , sans-serif ;
-         font-size: 4.5vh ;
+         font-size: 4vh ;
         }
 
 
@@ -180,13 +183,41 @@ font-family: Comfortaa , sans-serif ;
       background:#ffe6ec ;
 
       }
+  input { accent-color : #127ce6 }  .close { margin-top: 8px}
+  .settings { position: absolute ; right: 3px ; top: 7px ; background: none ; border: none;
+  }                                                                                                                    
     </style>
+<script>
+var r =document.querySelector(":root") ; 
+var va = localStorage.getItem("size") ;  
+   if( va != null) {
+  r.style.setProperty('--size', va + "vh");                               
+     }  
 
+var vat = localStorage.getItem("trans") ;  
+
+   if( va != null) {
+
+  r.style.setProperty('--site', vat + "vh");                               
+
+     }                                         
+     </script>                                                                                                                 
   </head>
 
   <body dir="rtl">
     <div dir="ltr" style="text-align: center ; margin:auto">
-<h1>Supplications</h1></div>
+<h1>Supplications</h1>
+      <dialog><div style="text-align: left"><label for="ar">Arabic font size :</label><br>
+
+<input type="range" id="ar" name="points:" step="0.5" min="1.5" max="5.5" onchange ="chane(this.value)"><br>
+  <label for="tr">Translation font size :</label><br>
+
+<input type="range" id="tr" name="points" step="0.5" min="1.5" max="3" onchange ="chanet(this.value)"> </div>                                                                                              
+<button onclick='document.querySelector("dialog").close()' class="close">Close</button>
+</dialog>
+  <button onclick="settings()" class="settings"><img src="
+https://res.cloudinary.com/tajweed/image/upload/c_scale,w_30/v1650082975/600px-Windows_Settings_app_icon_xcpl9g.png"
+alt="settings"></button>    </div>    
     <div class="dua" >
 اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۱﴾ الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۲﴾ 
       مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۳﴾ اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۴﴾ اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۵﴾ صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ  ۙ ۬ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾  
@@ -699,5 +730,41 @@ There is no god but Allah, the Great, the Tolerant, there is no god but Allah, t
 <div class="context"> Muslim : 6921</div>
 
 </div>
+                    <script>
+function settings() {
+
+document.querySelectorAll("dialog")[0].showModal();
+
+   }
+
+ var dua =document.querySelectorAll(".dua") ; var i ;                                
+var trans = document.querySelectorAll(".trans") ;
+function chane(val) {
+
+for( i=0 ; dua.length > i ; i++ ) {
+
+  dua[i].style.fontSize = val + "vh" ;                                        
+
+  }                                        
+localStorage.setItem("size" , val ) ;
+}   
+   function chanet(val) {
+
+for( i=0 ; trans.length > i ; i++ ) {
+
+  trans[i].style.fontSize = val + "vh" ;                                        
+
+  }                                        
+
+localStorage.setItem("trans" , val ) ;
+
+}                           
+   
+
+document.querySelectorAll("input")[1].value = localStorage.getItem("trans") ;                        
+document.querySelector("input").value = localStorage.getItem("size") ;
+</script>
+
+ 
     </html>
     </body>
